@@ -1,0 +1,1 @@
+["[07:45:39] [System] Scanner -> Arbiter bridge established","[07:45:39] [Camera Jammer] Initialized (WiFi: wlan0)","[07:45:39] [System] Camera -> Arbiter bridge established","[07:45:39] [WebServer] Starting on 0.0.0.0:5004","[07:45:39] * Serving Flask app 'web_server'","[07:45:39] * Debug mode: off","[07:50:12] [API] GET /api/logs from 127.0.0.1"]

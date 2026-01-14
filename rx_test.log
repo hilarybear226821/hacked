@@ -1,0 +1,286 @@
+Initializing system state to IDLE
+14:10:49 - SystemState - INFO - System State: init -> idle (by server_init)
+14:10:49 - SubGHzScanner - INFO - SubGHzScanner initialized
+[System] Scanner -> Arbiter bridge established
+14:10:49 - CameraJammer - INFO - Camera Jammer initialized (WiFi: wlan0)
+[Camera Jammer] Initialized (WiFi: wlan0)
+[System] Camera -> Arbiter bridge established
+[WebServer] Starting on 0.0.0.0:5001
+ * Serving Flask app 'web_server'
+ * Debug mode: off
+14:10:49 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://10.0.0.178:5001
+14:10:49 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+14:10:49 - HackRF - INFO - TRANSITION [OPEN] (Owner: None, Op: None)
+14:10:49 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2026 14:10:49] "POST /api/device/open HTTP/1.1" 200 -
+14:10:49 - SubGHzScanner - INFO - Scanner started
+14:10:49 - SubGHzScanner - INFO - Scanner configuring SDR defaults...
+14:10:49 - HackRF - INFO - TRANSITION [CONFIGURED] (Owner: None, Op: None)
+14:10:49 - SubGHzScanner - INFO - Scanner starting SDR RX stream...
+14:10:49 - SystemState - INFO - System State: idle -> rx (by internal)
+14:10:49 - HackRF - INFO - TRANSITION [RX_STARTING] (Owner: internal, Op: rx_stream)
+14:10:49 - HackRF - INFO - Starting RX with direct subprocess: ['/usr/bin/hackrf_transfer', '-r', '-', '-f', '315000000', '-s', '2000000', '-l', '40', '-g', '62', '-a', '1']
+14:10:49 - HackRF - INFO - RX subprocess started: PID 111423
+14:10:49 - HackRF - INFO - RX process confirmed running
+14:10:49 - HackRF - INFO - DEBUG: Configuring rx_bus
+14:10:49 - RXBus - INFO - RX Bus configured: 315.000 MHz @ 2.0 MSPS
+14:10:49 - HackRF - INFO - DEBUG: rx_bus configured
+14:10:49 - HackRF - INFO - DEBUG: RX thread started
+14:10:50 - HackRF - ERROR - RX start timeout: no samples received
+14:10:50 - RXBus - INFO - RX Bus stopped. Stats: 0 pushed, 0 dropped
+14:10:50 - HackRF - INFO - TRANSITION [ERROR] (Owner: internal, Op: rx_stream)
+14:10:50 - SystemState - ERROR - System ERROR from rx: RX start timeout
+14:10:50 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2026 14:10:50] "[35m[1mPOST /api/subghz/scanner/start HTTP/1.1[0m" 500 -
+14:10:51 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:10:51 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:10:51 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:10:52 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:10:52 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:10:52 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:10:52 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:10:52 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:10:53 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:10:53 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:10:53 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:10:53 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:10:53 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:10:54 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:10:54 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:10:54 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:10:54 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:10:54 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:10:55 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:10:55 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:10:55 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:10:55 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:10:55 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:10:56 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:10:56 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:10:56 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:10:56 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:10:56 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:10:57 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:10:57 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:10:57 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:10:57 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:10:57 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:10:58 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:10:58 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:10:58 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:10:58 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:10:58 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:10:59 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:10:59 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:10:59 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:10:59 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:10:59 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:00 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:00 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:00 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:00 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:00 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:01 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:01 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:01 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:01 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:01 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:02 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:02 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:02 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:02 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:02 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:03 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:03 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:03 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:03 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:03 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:04 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:04 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:04 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:04 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:04 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:05 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:05 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:05 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:05 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:06 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:06 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:06 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:06 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:06 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:07 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:07 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:07 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:07 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:07 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:08 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:08 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:08 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:08 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:08 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:09 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:09 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:09 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:09 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:09 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:10 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:10 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:10 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:10 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:10 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:11 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:11 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:11 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:11 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:11 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:12 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:12 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:12 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:12 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:12 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:13 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:13 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:13 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:13 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:13 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:14 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:14 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:14 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:14 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:14 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:15 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:15 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:15 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:15 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:15 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:16 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:16 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:16 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:16 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:16 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:17 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:17 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:17 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:17 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:17 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:18 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:18 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:18 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:18 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:18 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:19 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:19 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:19 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:19 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:19 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:20 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:20 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:20 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:20 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:20 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:21 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:21 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:21 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:21 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:21 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:22 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:22 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:22 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:22 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:22 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:23 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:23 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:23 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:23 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:23 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:24 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:24 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:24 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:24 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:24 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:25 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:25 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:25 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:25 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:25 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:26 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:26 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:26 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:26 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:26 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:27 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:27 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:27 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:27 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:27 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:28 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:28 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:28 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:28 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:28 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:29 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:29 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:29 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:29 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:29 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:30 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:30 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:30 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:30 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:30 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:31 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:31 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:31 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:31 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:31 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:32 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:32 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:32 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:32 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:32 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:33 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:33 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:33 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:33 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:33 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:34 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:34 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:34 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:34 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:34 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:35 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:35 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:35 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:35 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:35 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:36 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:36 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:36 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:36 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:36 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:37 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:37 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:37 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:37 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:37 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:38 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:38 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:38 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:38 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:38 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:39 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:39 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:39 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:39 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:39 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:40 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:40 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:40 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:40 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:40 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:41 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:41 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:41 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure
+14:11:41 - HackRF - ERROR - Failed to set frequency: Must be OPEN/CONFIGURED to configure

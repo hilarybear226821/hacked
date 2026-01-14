@@ -1,0 +1,96 @@
+# Wireless Asset Discovery Tool Configuration
+
+# Hardware Configuration
+# Hardware Configuration
+hardware:
+  hackrf_device: 0  # HackRF device index (0 for first device)
+  wifi_adapter: wlan1  # D-Link DWA-130 (RTL8191SU) - use wlan1 or check with 'ip a'
+
+# Scan Settings
+scanning:
+  wifi_enabled: false
+  bluetooth_enabled: false
+  sdr_enabled: true
+  
+  # Tuned Gains (315_BASIC_FIXED_FOB)
+  lna_gain: 32   # Lowered from max to prevent saturation
+  vga_gain: 28   # Lowered from max for better SNR
+  
+  # Scan intervals (seconds)
+  subghz_interval: 2
+  
+  # Device TTL (time-to-live in seconds)
+  device_ttl: 60
+
+# Sub-GHz Frequencies (MHz)
+subghz_frequencies:
+  - 315.0
+  - 433.92
+  - 868.35
+  - 915.0
+
+# Sub-GHz Sweep Configuration
+auto_capture_all: true # Automatically record any detected sub-ghz signal
+subghz_sweep: true
+subghz_sweep_ranges:
+  - [314.0, 316.0]
+  - [433.0, 435.0]
+  - [868.0, 870.0]
+  - [914.0, 916.0]
+
+# Signal Detection
+sdr_adaptive_threshold: true
+sdr_noise_floor_baseline: 0.02
+
+# Zigbee Channels (2.4 GHz)
+zigbee_channels:
+  - 11
+  - 15
+  - 20
+  - 25
+
+# Z-Wave Frequencies (MHz)
+zwave_frequencies:
+  us: 908.42
+  eu: 868.42
+
+# Jamming Detection
+jamming:
+  noise_floor_threshold: 10  # dB above baseline
+  fft_size: 2048
+  averaging_window: 10  # samples
+
+# Dashboard Settings
+dashboard:
+  host: "0.0.0.0"
+  port: 5000
+  debug: false
+  auto_refresh_interval: 1000  # milliseconds
+
+# Reconnaissance Modules (SDR Only)
+reconnaissance:
+  sdr_only: true
+
+# OUI Database
+oui:
+  database_path: "data/oui.txt"
+  auto_update: true
+  update_interval_days: 30
+
+# Camera Jamming Configuration
+camera_jamming:
+  enabled: true
+  default_band: "2.4GHz"  # 2.4GHz, 5GHz, or both
+  safety_timeout: 60      # Auto-stop after N seconds
+  power_level: 47         # TX gain 0-47 (max)
+
+# Glass Break Detection
+glass_break:
+  enabled: true
+  monitor_frequencies:    # MHz
+    - 315.0
+    - 433.92
+    - 868.35
+  detection_threshold: 0.05
+
+auto_drive_mode: true

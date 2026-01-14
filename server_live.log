@@ -1,0 +1,12 @@
+Initializing system state to IDLE
+14:22:07 - SystemState - INFO - System State: init -> idle (by server_init)
+14:22:07 - SubGHzScanner - INFO - SubGHzScanner initialized
+[System] Scanner -> Arbiter bridge established
+14:22:07 - CameraJammer - INFO - Camera Jammer initialized (WiFi: wlan0)
+[Camera Jammer] Initialized (WiFi: wlan0)
+[System] Camera -> Arbiter bridge established
+[WebServer] Starting on 0.0.0.0:5001
+ * Serving Flask app 'web_server'
+ * Debug mode: off
+Address already in use
+Port 5001 is in use by another program. Either identify and stop that program, or start the server with a different port.

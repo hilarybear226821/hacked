@@ -1,0 +1,28 @@
+nohup: ignoring input
+Stopping existing server instances...
+Starting SDR Backend on port 5001...
+12:26:16 - SubGHzScanner - INFO - SubGHzScanner initialized
+[System] Scanner -> Arbiter bridge established
+12:26:16 - CameraJammer - INFO - Camera Jammer initialized (WiFi: wlan0)
+[Camera Jammer] Initialized (WiFi: wlan0)
+[System] Camera -> Arbiter bridge established
+[WebServer] Starting on 0.0.0.0:5001
+ * Serving Flask app 'web_server'
+ * Debug mode: off
+12:26:16 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://10.0.0.178:5001
+12:26:16 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+[Heartbeat] Auto-resuming passive scanner...
+12:26:17 - SubGHzScanner - INFO - Scanner started
+12:26:17 - SubGHzScanner - INFO - Scanner configuring SDR defaults...
+12:26:17 - HackRF - INFO - TRANSITION [OPEN] (Owner: None, Op: None)
+12:26:17 - SystemState - INFO - System State: init -> idle (by system)
+12:26:17 - HackRF - INFO - TRANSITION [CONFIGURED] (Owner: None, Op: None)
+12:26:17 - SubGHzScanner - INFO - Scanner starting SDR RX stream...
+12:26:17 - SystemState - INFO - System State: idle -> rx (by internal)
+12:26:17 - HackRF - INFO - TRANSITION [RX_STARTING] (Owner: internal, Op: rx_stream)
+12:26:28 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2026 12:26:28] "GET /api/status HTTP/1.1" 200 -
+start_server.sh: line 14: 18261 Killed                     python3 web_server.py
+7ujj8

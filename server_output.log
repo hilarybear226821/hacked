@@ -1,0 +1,37 @@
+Initializing system state to IDLE
+14:03:49 - SystemState - INFO - System State: init -> idle (by server_init)
+14:03:49 - SubGHzScanner - INFO - SubGHzScanner initialized
+[System] Scanner -> Arbiter bridge established
+14:03:49 - CameraJammer - INFO - Camera Jammer initialized (WiFi: wlan0)
+[Camera Jammer] Initialized (WiFi: wlan0)
+[System] Camera -> Arbiter bridge established
+[WebServer] Starting on 0.0.0.0:5001
+ * Serving Flask app 'web_server'
+ * Debug mode: off
+14:03:49 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://10.0.0.178:5001
+14:03:49 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+14:03:49 - HackRF - INFO - TRANSITION [OPEN] (Owner: None, Op: None)
+14:03:49 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2026 14:03:49] "POST /api/device/open HTTP/1.1" 200 -
+14:03:49 - SubGHzScanner - INFO - Scanner started
+14:03:49 - SubGHzScanner - INFO - Scanner configuring SDR defaults...
+14:03:49 - HackRF - INFO - TRANSITION [CONFIGURED] (Owner: None, Op: None)
+14:03:49 - SubGHzScanner - INFO - Scanner starting SDR RX stream...
+14:03:49 - SystemState - INFO - System State: idle -> rx (by internal)
+14:03:49 - HackRF - INFO - TRANSITION [RX_STARTING] (Owner: internal, Op: rx_stream)
+14:03:49 - HackRF - INFO - DEBUG: Starting rx_manager with ['/usr/bin/hackrf_transfer', '-r', '-', '-f', '315000000', '-s', '2000000', '-l', '40', '-g', '62', '-a', '1']
+14:03:50 - EventBus - INFO - Client registered. Total: 1
+14:03:53 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2026 14:03:53] "GET /api/logs HTTP/1.1" 200 -
+14:03:55 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2026 14:03:55] "GET /api/state HTTP/1.1" 200 -
+14:03:58 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2026 14:03:58] "GET /api/logs HTTP/1.1" 200 -
+14:04:03 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2026 14:04:03] "GET /api/logs HTTP/1.1" 200 -
+14:04:08 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2026 14:04:08] "GET /api/logs HTTP/1.1" 200 -
+14:04:13 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2026 14:04:13] "GET /api/logs HTTP/1.1" 200 -
+14:04:18 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2026 14:04:18] "GET /api/logs HTTP/1.1" 200 -
+14:04:23 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2026 14:04:23] "GET /api/logs HTTP/1.1" 200 -
+14:04:28 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2026 14:04:28] "GET /api/logs HTTP/1.1" 200 -
+14:04:33 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2026 14:04:33] "GET /api/logs HTTP/1.1" 200 -
+14:04:38 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2026 14:04:38] "GET /api/logs HTTP/1.1" 200 -
+14:04:43 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2026 14:04:43] "GET /api/logs HTTP/1.1" 200 -

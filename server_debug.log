@@ -1,0 +1,37 @@
+15:20:46 - RXBus - INFO - Registering new RX consumer: spectrum
+Initializing system state to IDLE
+15:20:46 - SystemState - INFO - System State: init -> idle (by server_init)
+15:20:46 - SubGHzScanner - INFO - Protocol decoders initialized: CAME, Nice, Princeton, EV1527
+15:20:46 - SubGHzScanner - INFO - SubGHzScanner initialized
+[System] Scanner -> Arbiter bridge established (Event Driven)
+15:20:46 - CameraJammer - INFO - Camera Jammer initialized (WiFi: wlan0)
+[Camera Jammer] Initialized (WiFi: wlan0)
+[System] Camera -> Arbiter bridge established
+[System] Auto-starting SCPE Engine...
+15:20:46 - SCPE_Engine - INFO - SCPE Engine Started (Production Mode)
+15:20:46 - SystemState - INFO - System State: idle -> rx (by scpe_internal)
+15:20:46 - SystemState - INFO - System State: rx -> idle (by scpe_internal)
+Exception in thread SCPE_Monitor:
+15:20:46 - SCPE_Engine - INFO - SCPE Active Monitoring Started - Target: 433.92 MHz
+[WebServer] Starting on 0.0.0.0:5001
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/threading.py", line 1044, in _bootstrap_inner
+    self.run()
+    ~~~~~~~~^^
+  File "/usr/lib/python3.13/threading.py", line 995, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hilary/hacked/modules/scpe_engine.py", line 199, in _monitor_worker
+    self.sdr.start_rx(lambda x: None, requester="scpe_internal")
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hilary/hacked/modules/sdr_controller.py", line 955, in start_rx
+    raise e
+  File "/home/hilary/hacked/modules/sdr_controller.py", line 940, in start_rx
+    success = self.device.start_rx(callback, requester)
+  File "/home/hilary/hacked/modules/sdr_controller.py", line 437, in start_rx
+    raise RuntimeError(f"Cannot start RX from {self.state.name}")
+RuntimeError: Cannot start RX from CLOSED
+ * Serving Flask app 'web_server'
+ * Debug mode: off
+Address already in use
+Port 5001 is in use by another program. Either identify and stop that program, or start the server with a different port.

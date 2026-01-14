@@ -1,0 +1,36 @@
+[WebServer] Starting on 0.0.0.0:5001
+ * Serving Flask app 'web_server'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://10.0.0.178:5001
+Press CTRL+C to quit
+[API] GET /api/status from 10.0.0.21
+10.0.0.21 - - [14/Jan/2026 04:01:36] "GET /api/status HTTP/1.1" 200 -
+[API] GET /api/status from 127.0.0.1
+127.0.0.1 - - [14/Jan/2026 04:01:36] "GET /api/status HTTP/1.1" 200 -
+[API] GET /api/status from 10.0.0.21
+10.0.0.21 - - [14/Jan/2026 04:01:38] "GET /api/status HTTP/1.1" 200 -
+[API] GET /api/status from 10.0.0.21
+10.0.0.21 - - [14/Jan/2026 04:01:40] "GET /api/status HTTP/1.1" 200 -
+[API] GET /api/status from 10.0.0.21
+10.0.0.21 - - [14/Jan/2026 04:01:42] "GET /api/status HTTP/1.1" 200 -
+[API] GET /api/status from 10.0.0.21
+10.0.0.21 - - [14/Jan/2026 04:01:44] "GET /api/status HTTP/1.1" 200 -
+[API] GET /api/status from 10.0.0.21
+10.0.0.21 - - [14/Jan/2026 04:01:46] "GET /api/status HTTP/1.1" 200 -
+[API] GET /api/status from 10.0.0.21
+10.0.0.21 - - [14/Jan/2026 04:01:48] "GET /api/status HTTP/1.1" 200 -
+[API] GET /api/status from 10.0.0.21
+10.0.0.21 - - [14/Jan/2026 04:01:50] "GET /api/status HTTP/1.1" 200 -
+[API] GET /api/status from 10.0.0.21
+10.0.0.21 - - [14/Jan/2026 04:01:52] "GET /api/status HTTP/1.1" 200 -
+[API] GET /api/status from 10.0.0.21
+10.0.0.21 - - [14/Jan/2026 04:01:54] "GET /api/status HTTP/1.1" 200 -
+[API] GET /api/status from 10.0.0.21
+10.0.0.21 - - [14/Jan/2026 04:01:57] "GET /api/status HTTP/1.1" 200 -
+[API] GET /api/status from 10.0.0.21
+10.0.0.21 - - [14/Jan/2026 04:01:58] "GET /api/status HTTP/1.1" 200 -
+[API] GET /api/status from 10.0.0.21
+10.0.0.21 - - [14/Jan/2026 04:02:01] "GET /api/status HTTP/1.1" 200 -

@@ -1,0 +1,9 @@
+
+00-01-42   (hex)   Cisco Systems, Inc
+00-0C-42   (hex)   Hikvision Digital Technology Co., Ltd
+44-19-B6   (hex)   Dahua Technology Co., Ltd
+00-40-8C   (hex)   AXIS Communications AB
+00-03-C5   (hex)   Honeywell
+B0-C5-54   (hex)   Ring LLC
+00-17-88   (hex)   Nest Labs
+EC-71-DB   (hex)   TP-Link Corporation

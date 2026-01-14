@@ -1,0 +1,28 @@
+[
+  {
+    "id": "1768274240",
+    "name": "Princeton_433MHz",
+    "protocol": "Princeton",
+    "frequency_mhz": 433.92,
+    "raw_file": "captures/subghz/clone_433MHz_1768274240.cs16",
+    "decoded_data": null,
+    "captured_time": 1768274240,
+    "button": null,
+    "serial": null,
+    "manufacturer": null,
+    "clone_count": 0
+  },
+  {
+    "id": "1768275665",
+    "name": "NiceFlorR_315MHz",
+    "protocol": "NiceFlorR",
+    "frequency_mhz": 315.0,
+    "raw_file": "captures/subghz/clone_315MHz_1768275665.cs16",
+    "decoded_data": null,
+    "captured_time": 1768275665,
+    "button": null,
+    "serial": null,
+    "manufacturer": null,
+    "clone_count": 0
+  }
+]

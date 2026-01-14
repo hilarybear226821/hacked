@@ -1,0 +1,21 @@
+[WebServer] Starting on 0.0.0.0:5001
+ * Serving Flask app 'web_server'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://10.0.0.178:5001
+Press CTRL+C to quit
+[API] GET /api/capabilities from 127.0.0.1
+127.0.0.1 - - [14/Jan/2026 02:47:14] "GET /api/capabilities HTTP/1.1" 200 -
+[API] GET /api/state from 127.0.0.1
+127.0.0.1 - - [14/Jan/2026 02:47:14] "GET /api/state HTTP/1.1" 200 -
+[API] POST /api/device/open from 127.0.0.1
+127.0.0.1 - - [14/Jan/2026 02:47:14] "POST /api/device/open HTTP/1.1" 200 -
+[API] POST /api/device/open from 127.0.0.1
+127.0.0.1 - - [14/Jan/2026 02:47:14] "POST /api/device/open HTTP/1.1" 200 -
+[API] POST /api/device/configure from 127.0.0.1
+127.0.0.1 - - [14/Jan/2026 02:47:14] "POST /api/device/configure HTTP/1.1" 200 -
+[API] GET /api/state from 127.0.0.1
+127.0.0.1 - - [14/Jan/2026 02:47:14] "GET /api/state HTTP/1.1" 200 -
+[API] POST /api/rx/start from 127.0.0.1

@@ -1,0 +1,102 @@
+[WebServer] Starting on 0.0.0.0:5001
+ * Serving Flask app 'web_server'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://10.0.0.178:5001
+Press CTRL+C to quit
+[API] GET /api/status from 10.0.0.21
+10.0.0.21 - - [14/Jan/2026 03:48:25] "GET /api/status HTTP/1.1" 200 -
+[API] GET /api/status from 10.0.0.21
+10.0.0.21 - - [14/Jan/2026 03:48:27] "GET /api/status HTTP/1.1" 200 -
+[API] GET /api/status from 10.0.0.21
+10.0.0.21 - - [14/Jan/2026 03:48:29] "GET /api/status HTTP/1.1" 200 -
+[API] GET /api/status from 10.0.0.21
+10.0.0.21 - - [14/Jan/2026 03:48:31] "GET /api/status HTTP/1.1" 200 -
+[API] GET /api/status from 10.0.0.21
+10.0.0.21 - - [14/Jan/2026 03:48:33] "GET /api/status HTTP/1.1" 200 -
+[API] GET /api/status from 127.0.0.1
+127.0.0.1 - - [14/Jan/2026 03:48:35] "GET /api/status HTTP/1.1" 200 -
+[API] GET /api/status from 10.0.0.21
+10.0.0.21 - - [14/Jan/2026 03:48:35] "GET /api/status HTTP/1.1" 200 -
+[API] GET /api/status from 10.0.0.21
+10.0.0.21 - - [14/Jan/2026 03:48:37] "GET /api/status HTTP/1.1" 200 -
+[API] GET /api/status from 10.0.0.21
+10.0.0.21 - - [14/Jan/2026 03:48:39] "GET /api/status HTTP/1.1" 200 -
+[API] GET /api/status from 10.0.0.21
+10.0.0.21 - - [14/Jan/2026 03:48:41] "GET /api/status HTTP/1.1" 200 -
+[API] GET /api/status from 10.0.0.21
+10.0.0.21 - - [14/Jan/2026 03:48:43] "GET /api/status HTTP/1.1" 200 -
+[API] GET /api/status from 10.0.0.21
+10.0.0.21 - - [14/Jan/2026 03:48:45] "GET /api/status HTTP/1.1" 200 -
+[API] GET /api/status from 10.0.0.21
+10.0.0.21 - - [14/Jan/2026 03:48:47] "GET /api/status HTTP/1.1" 200 -
+[API] GET /api/status from 10.0.0.21
+10.0.0.21 - - [14/Jan/2026 03:48:49] "GET /api/status HTTP/1.1" 200 -
+[API] GET /api/status from 10.0.0.21
+10.0.0.21 - - [14/Jan/2026 03:48:51] "GET /api/status HTTP/1.1" 200 -
+[API] GET /api/status from 10.0.0.21
+10.0.0.21 - - [14/Jan/2026 03:48:53] "GET /api/status HTTP/1.1" 200 -
+[API] GET /api/status from 10.0.0.21
+10.0.0.21 - - [14/Jan/2026 03:48:55] "GET /api/status HTTP/1.1" 200 -
+[API] GET /api/status from 10.0.0.21
+10.0.0.21 - - [14/Jan/2026 03:48:57] "GET /api/status HTTP/1.1" 200 -
+[API] GET /api/status from 10.0.0.21
+10.0.0.21 - - [14/Jan/2026 03:48:59] "GET /api/status HTTP/1.1" 200 -
+[API] GET /api/status from 10.0.0.21
+10.0.0.21 - - [14/Jan/2026 03:49:01] "GET /api/status HTTP/1.1" 200 -
+[API] GET /api/status from 10.0.0.21
+10.0.0.21 - - [14/Jan/2026 03:49:03] "GET /api/status HTTP/1.1" 200 -
+[API] GET /api/status from 127.0.0.1
+127.0.0.1 - - [14/Jan/2026 03:49:04] "GET /api/status HTTP/1.1" 200 -
+[API] GET /api/capabilities from 127.0.0.1
+127.0.0.1 - - [14/Jan/2026 03:49:05] "GET /api/capabilities HTTP/1.1" 200 -
+[API] GET /api/state from 127.0.0.1
+127.0.0.1 - - [14/Jan/2026 03:49:05] "GET /api/state HTTP/1.1" 200 -
+[API] GET /api/logs from 127.0.0.1
+127.0.0.1 - - [14/Jan/2026 03:49:05] "GET /api/logs HTTP/1.1" 200 -
+[API] POST /api/device/open from 127.0.0.1
+127.0.0.1 - - [14/Jan/2026 03:49:05] "POST /api/device/open HTTP/1.1" 200 -
+[API] POST /api/attack/rolljam/start from 127.0.0.1
+[API] GET /api/status from 10.0.0.21
+[API] GET /api/attack/camera_jammer/cameras from 127.0.0.1
+[API] GET /api/status from 10.0.0.21
+[API] GET /api/status from 10.0.0.21
+[API] GET /api/status from 10.0.0.21
+[API] GET /api/status from 10.0.0.21
+[API] GET /api/status from 10.0.0.21
+[API] GET /api/status from 10.0.0.21
+[API] GET /api/status from 10.0.0.21
+[API] GET /api/status from 10.0.0.21
+[API] GET /api/status from 10.0.0.21
+[API] GET /api/status from 10.0.0.21
+[API] GET /api/status from 10.0.0.21
+[API] GET /api/status from 10.0.0.21
+[API] GET /api/status from 10.0.0.21
+[API] GET /api/status from 10.0.0.21
+[API] GET /api/status from 10.0.0.21
+[API] GET /api/status from 10.0.0.21
+[API] GET /api/status from 10.0.0.21
+[API] GET /api/status from 10.0.0.21
+[API] GET /api/status from 10.0.0.21
+[API] GET /api/status from 10.0.0.21
+[API] GET /api/status from 10.0.0.21
+[API] GET /api/status from 10.0.0.21
+[API] GET /api/status from 10.0.0.21
+[API] GET /api/status from 10.0.0.21
+[API] GET /api/status from 10.0.0.21
+[API] GET /api/status from 10.0.0.21
+[API] GET /api/status from 10.0.0.21
+[API] GET /api/status from 10.0.0.21
+[API] GET /api/status from 10.0.0.21
+[API] GET /api/status from 10.0.0.21
+[API] GET /api/status from 10.0.0.21
+[API] GET /api/status from 10.0.0.21
+[API] GET /api/status from 10.0.0.21
+[API] GET /api/status from 10.0.0.21
+[API] GET /api/status from 10.0.0.21
+[API] GET /api/status from 10.0.0.21
+[API] GET /api/status from 10.0.0.21
+[API] GET /api/status from 10.0.0.21
+[API] GET /api/status from 10.0.0.21
